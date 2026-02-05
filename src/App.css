@@ -1,0 +1,298 @@
+/* General Body & Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5a67d8;
+  text-decoration: none;
+}
+.nav-links a,
+.logout-button {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #5a67d8;
+}
+.logout-button {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.logout-button:hover {
+  background: #c53030;
+}
+
+/* Auth Forms (Signup/Signin) */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.auth-form {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.auth-form h2 {
+  margin-top: 0;
+}
+.auth-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.auth-form button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.auth-form button:hover {
+  background-color: #4c51bf;
+}
+.form-switch {
+  text-align: center;
+  margin-top: 1rem;
+}
+.file-input-container {
+  margin-bottom: 1rem;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.product-info {
+  padding: 1rem;
+}
+.product-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a67d8;
+  margin-bottom: 1rem;
+}
+.product-info button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #38a169;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product-info button:hover {
+  background-color: #2f855a;
+}
+
+/* Cart Page */
+.cart-item {
+  display: flex;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+}
+.cart-item-details {
+  flex-grow: 1;
+}
+.cart-item-details h3 {
+  margin: 0;
+}
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.cart-item-actions input {
+  width: 60px;
+  text-align: center;
+  margin: 0 1rem;
+}
+.remove-btn {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.cart-item-subtotal {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.cart-summary {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: right;
+}
+.checkout-btn {
+  background-color: #5a67d8;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Profile Page */
+.profile-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+/* Utility */
+.error-message {
+  color: #e53e3e;
+  background: #fed7d7;
+  padding: 0.8rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+/* Add this to your existing frontend/src/App.css */
+
+/* Add Product Form */
+.add-product-form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+.add-product-form-container h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.add-product-form {
+  display: grid;
+  gap: 1rem;
+}
+.add-product-form input,
+.add-product-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.add-product-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.add-product-form button {
+  padding: 0.9rem;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.add-product-form button:hover {
+  background-color: #4c51bf;
+}
